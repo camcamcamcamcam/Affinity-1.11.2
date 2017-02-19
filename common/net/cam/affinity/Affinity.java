@@ -16,6 +16,7 @@ public class Affinity {
 	public static final String MOD_ID = "affinity";
 	public static final String MOD_NAME = "Affinity";
 	public static final String VERSION = "1.0.0";
+	public static final String RESOURCE_PREFIX = MOD_ID.toLowerCase() + ":";
 
 	public static Random random = new Random();
 
@@ -28,6 +29,7 @@ public class Affinity {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);
+		System.out.println("Loading Affinity...");
 	}
 
 	@EventHandler

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "affinity",
+  "name": "Affinity",
+  "description": "Exploring more of the world",
+  "version": "1.0.0",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "SilentChaos, camcamcamcamcam and the Abnormalities team",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
