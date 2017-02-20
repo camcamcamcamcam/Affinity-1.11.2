@@ -1,0 +1,6 @@
+{
+  "parent": "affinity:block/cheese_block",
+  "textures": {
+    "layer0": "affinity:blocks/cheese_block"
+  }
+}

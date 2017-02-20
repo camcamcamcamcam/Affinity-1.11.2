@@ -29,7 +29,6 @@ public class Affinity {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);
-		System.out.println("Loading Affinity...");
 	}
 
 	@EventHandler

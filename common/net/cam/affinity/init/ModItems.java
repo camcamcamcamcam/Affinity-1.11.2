@@ -12,18 +12,18 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModItems {
-	public static ItemCheese cheese;
+	public static ItemCheese cheeseItem;
 
 	public static void init() {
-		cheese = new ItemCheese();
-		cheese.setRegistryName(new ResourceLocation(Affinity.MOD_ID, Names.CHEESE));
-		GameRegistry.register(cheese);
+		cheeseItem = new ItemCheese();
+		cheeseItem.setRegistryName(new ResourceLocation(Affinity.MOD_ID, Names.CHEESE_ITEM));
+		GameRegistry.register(cheeseItem);
 	}
 
 	@SideOnly(Side.CLIENT)
 	public static void initClient(ItemModelMesher mesher) {
-		ModelResourceLocation model = new ModelResourceLocation(Affinity.RESOURCE_PREFIX + Names.CHEESE, "inventory");
-		ModelLoader.registerItemVariants(cheese, model);
-		mesher.register(cheese, 0, model);
+		ModelResourceLocation model = new ModelResourceLocation(Affinity.RESOURCE_PREFIX + Names.CHEESE_ITEM, "inventory");
+		ModelLoader.registerItemVariants(cheeseItem, model);
+		mesher.register(cheeseItem, 0, model);
 	}
 }

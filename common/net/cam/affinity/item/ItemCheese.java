@@ -19,6 +19,6 @@ public class ItemCheese extends Item {
 
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
-		return "item." + Affinity.RESOURCE_PREFIX + Names.CHEESE; // item.affinity:cheese
+		return "item." + Affinity.RESOURCE_PREFIX + Names.CHEESE_ITEM; // item.affinity:cheese
 	}
 }
