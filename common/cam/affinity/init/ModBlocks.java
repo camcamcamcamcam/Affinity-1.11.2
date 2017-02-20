@@ -1,8 +1,8 @@
-package net.cam.affinity.init;
+package cam.affinity.init;
 
-import net.cam.affinity.Affinity;
-import net.cam.affinity.block.BlockCheese;
-import net.cam.affinity.lib.Names;
+import cam.affinity.Affinity;
+import cam.affinity.block.BlockCheese;
+import cam.affinity.lib.Names;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -25,6 +25,10 @@ public class ModBlocks {
 		GameRegistry.register(new ItemBlock(cheeseBlock), location);
 	}
 
+	public static void initRecipes(){
+		cheeseBlock.addRecipes();
+	}
+	
 	@SideOnly(Side.CLIENT)
 	public static void initClient(ItemModelMesher mesher) {
 		Item item = Item.getItemFromBlock(cheeseBlock);

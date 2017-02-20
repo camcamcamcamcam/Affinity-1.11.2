@@ -1,7 +1,10 @@
-package net.cam.affinity;
+package cam.affinity;
 
 import java.util.Random;
 
+import cam.affinity.init.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -23,7 +26,7 @@ public class Affinity {
 	@Instance(MOD_ID)
 	public static Affinity instance;
 
-	@SidedProxy(clientSide = "net.cam.affinity.ClientProxy", serverSide = "net.cam.affinity.CommonProxy")
+	@SidedProxy(clientSide = "cam.affinity.ClientProxy", serverSide = "cam.affinity.CommonProxy")
 	public static CommonProxy proxy;
 
 	@EventHandler
@@ -40,4 +43,11 @@ public class Affinity {
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit(event);
 	}
+
+	public static CreativeTabs tabAffinity = new CreativeTabs(Affinity.RESOURCE_PREFIX + "affinity") {
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ModItems.cheeseItem);
+		}
+	};
 }

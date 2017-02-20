@@ -1,7 +1,7 @@
-package net.cam.affinity;
+package cam.affinity;
 
-import net.cam.affinity.init.ModBlocks;
-import net.cam.affinity.init.ModItems;
+import cam.affinity.init.ModBlocks;
+import cam.affinity.init.ModItems;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -16,7 +16,8 @@ public class CommonProxy {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-
+		ModBlocks.initRecipes();
+		ModItems.initRecipes();
 	}
 
 	@EventHandler

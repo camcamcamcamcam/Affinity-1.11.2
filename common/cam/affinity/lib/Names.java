@@ -1,4 +1,4 @@
-package net.cam.affinity.lib;
+package cam.affinity.lib;
 
 public class Names {
 

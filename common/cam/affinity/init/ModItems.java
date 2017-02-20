@@ -1,8 +1,8 @@
-package net.cam.affinity.init;
+package cam.affinity.init;
 
-import net.cam.affinity.Affinity;
-import net.cam.affinity.item.ItemCheese;
-import net.cam.affinity.lib.Names;
+import cam.affinity.Affinity;
+import cam.affinity.item.ItemCheese;
+import cam.affinity.lib.Names;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.util.ResourceLocation;
@@ -20,6 +20,10 @@ public class ModItems {
 		GameRegistry.register(cheeseItem);
 	}
 
+	public static void initRecipes() {
+		cheeseItem.addRecipes();
+	}
+	
 	@SideOnly(Side.CLIENT)
 	public static void initClient(ItemModelMesher mesher) {
 		ModelResourceLocation model = new ModelResourceLocation(Affinity.RESOURCE_PREFIX + Names.CHEESE_ITEM, "inventory");

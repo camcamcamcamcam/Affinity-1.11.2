@@ -1,7 +1,7 @@
-package net.cam.affinity;
+package cam.affinity;
 
-import net.cam.affinity.init.ModBlocks;
-import net.cam.affinity.init.ModItems;
+import cam.affinity.init.ModBlocks;
+import cam.affinity.init.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

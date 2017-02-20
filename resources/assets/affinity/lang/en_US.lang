@@ -5,3 +5,7 @@ item.affinity:cheese.name=Cheese
 # Blocks
 
 tile.affinity:cheese_block.name=Cheese Block
+
+# Creative Tabs
+
+itemGroup.affinity:affinity=Affinity
